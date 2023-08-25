@@ -7,14 +7,14 @@
 */
 void selection_sort(int *array, size_t size)
 {
-	int i = 0;
-	int j;
+	size_t i = 0;
+	size_t j;
 	int tmp;
 
 	if (array == NULL || size < 2)
 		return;
 
-	for(; i < size - 1 ; i++)
+	for (; i < size - 1 ; i++)
 	{
 		for (j = i + 1; j < size; j++)
 		{

@@ -24,7 +24,7 @@ void quick_sort(int *array, size_t size)
 void quick_sorted(int *array, int lower, int upper, size_t size)
 {
 	int loc;
-       
+
 	if (lower < upper)
 	{
 		loc = partition(array, lower, upper, size);
@@ -64,7 +64,7 @@ int partition(int *array, int lower, int upper, size_t size)
 	swap_ints(&array[left], &array[upper]);
 	if (left != right)
 		print_array(array, size);
-	return left;
+	return (left);
 }
 /**
  * swap_ints -- swaps two integers
