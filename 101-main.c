@@ -1,14 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "sort.h"
-
 /**
- * create_listint - Creates a doubly linked list from an array of integers
- *
- * @array: Array to convert to a doubly linked list
- * @size: Size of the array
- *
- * Return: Pointer to the first element of the created list. NULL on failure
+ *create_listint - Creates a doubly linked list from an array of integers
+ *@array: Array to convert to a doubly linked list
+ *@size: Size of the array
+ *Return: Pointer to the first element of the created list. NULL on failure
  */
 listint_t *create_listint(const int *array, size_t size)
 {
@@ -32,11 +29,9 @@ listint_t *create_listint(const int *array, size_t size)
     }
     return (list);
 }
-
 /**
- * main - Entry point
- *
- * Return: Always 0
+ *main - Entry point
+ *Return: Always 0
  */
 int main(void)
 {
