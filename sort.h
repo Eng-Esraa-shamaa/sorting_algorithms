@@ -2,7 +2,7 @@
 #define SORT_H
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <stdbool.h>
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -27,4 +27,6 @@ void quick_sorted(int *array, int lower, int upper, size_t size);
 int partition(int *array, int lower, int upper, size_t size);
 void swap_ints(int *a, int *b);
 void shell_sort(int *array, size_t size);
+void swap_nodes(listint_t *node_1, listint_t *node_2, listint_t **list);
+void cocktail_sort_list(listint_t **list);
 #endif
